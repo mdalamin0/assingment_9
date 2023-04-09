@@ -1,10 +1,11 @@
+import NavBar from "./Components/Nav-bar/NavBar"
 
 
 function App() {
 
   return (
     <div className="App">
-      <h3 className="text-xl text-center font-semibold py-4">Welcome to my project</h3>
+      <NavBar></NavBar>
     </div>
   )
 }
