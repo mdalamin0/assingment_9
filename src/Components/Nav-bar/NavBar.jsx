@@ -4,9 +4,9 @@ import { Link, NavLink } from 'react-router-dom'
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='px-7 py-5 mx-auto  md:max-w-full lg:w-full md:px-24 lg:px-24 bg-gray-200'>
+        <div className='my-container'>
             <div className='relative flex items-center justify-between gap-10'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Future is here</h1>
+                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Build Your Life</h1>
                 <ul className='items-center hidden  lg:flex gap-10'>
 
                     <li>
@@ -14,7 +14,17 @@ const NavBar = () => {
                             to='/'
                             aria-label='Home'
                             title='Home'
-                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
+                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to='/statistics'
+                            aria-label='Home'
+                            title='Home'
+                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Statistics
                         </NavLink>
@@ -24,7 +34,7 @@ const NavBar = () => {
                             to='/shop'
                             aria-label='Shop'
                             title='Shop'
-                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
+                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Apply jobs
                         </NavLink>
@@ -35,7 +45,7 @@ const NavBar = () => {
                             to='/about'
                             aria-label='About Us'
                             title='About Us'
-                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
+                            className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Blogs
                         </NavLink>
@@ -44,6 +54,8 @@ const NavBar = () => {
                 </ul>
 
                 <button className='btn rounded-md'>Star Applying </button>
+
+                {/* Mobile nav bar */}
 
                 <div className='lg:hidden'>
                     <button
@@ -94,34 +106,45 @@ const NavBar = () => {
                                 <nav>
                                     <ul className='space-y-4'>
                                         <li>
-                                            <Link
+                                            <NavLink
                                                 to='/'
                                                 aria-label='Home'
                                                 title='Home'
-                                                className=' tracking-wide text-white font-bold transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
+                                            >
+                                                Home
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to='/statistics'
+                                                aria-label='Home'
+                                                title='Home'
+                                                className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Statistics
-                                            </Link>
+                                            </NavLink>
                                         </li>
                                         <li>
-                                            <Link
-                                                to='/about'
-                                                aria-label='About Us'
-                                                title='About Us'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                            <NavLink
+                                                to='/shop'
+                                                aria-label='Shop'
+                                                title='Shop'
+                                                className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Apply jobs
-                                            </Link>
+                                            </NavLink>
                                         </li>
+
                                         <li>
-                                            <Link
+                                            <NavLink
                                                 to='/about'
                                                 aria-label='About Us'
                                                 title='About Us'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Blogs
-                                            </Link>
+                                            </NavLink>
                                         </li>
                                     </ul>
 
