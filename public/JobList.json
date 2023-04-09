@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "category": "Software Engineer",
+        "title": "Full Stack Web Developer",
+        "description": "120+ Jobs Available",
+        "img": "https://thumbs.dreamstime.com/z/software-engineer-turquoise-concept-icon-source-code-system-maintenance-development-computer-programmer-idea-thin-line-188090262.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Marketing",
+        "title": "Digital Marketing Manager",
+        "description": "200+ Jobs Available",
+        "img": "https://cdn-icons-png.flaticon.com/512/7653/7653945.png"
+    },
+    {
+        "id": 3,
+        "category": "Product Manager",
+        "title": "Financial Analyst",
+        "description": "370+ Jobs Available",
+        "img": "https://www.shutterstock.com/shutterstock/photos/1412461697/display_1500/stock-vector-business-organisation-and-product-manager-icon-concept-1412461697.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Frontend Developer",
+        "title": "HR Manager",
+        "description": "150+ Jobs Available",
+        "img": "https://static.vecteezy.com/system/resources/thumbnails/003/835/835/small/front-end-concept-icon-software-development-kit-idea-thin-line-illustration-service-orchestration-programming-and-coding-responsive-website-design-isolated-outline-drawing-vector.jpg"
+    }
+]

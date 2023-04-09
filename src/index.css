@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container{
-  @apply px-4 py-7 mx-auto  md:max-w-full lg:max-w-full md:px-24 lg:px-24 lg:py-8 bg-gray-200
+  @apply px-4 py-7 mx-auto  md:max-w-full lg:max-w-full md:px-24 lg:px-24 lg:py-8 
 }
 .btn{
   @apply bg-gradient-to-r from-blue-500 to-indigo-500 px-7 py-3 text-white font-semibold

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom'
+import HeaderBanner from '../Header-banner/HeaderBanner';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='my-container'>
+        <div className='my-container bg-gray-200'>
             <div className='relative flex items-center justify-between gap-10'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Build Your Life</h1>
                 <ul className='items-center hidden  lg:flex gap-10'>
@@ -156,13 +157,6 @@ const NavBar = () => {
                     )}
                 </div>
             </div>
-            {/* <div className='flex justify-between'>
-                <div>
-                    <h1>One Step Closer To Your Dream Job</h1>
-                </div>
-                <img src="../image-1.jpg" alt="" />
-                <h1>hello </h1>
-            </div> */}
         </div>
 
     );
