@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import JobsFeatured from '../JobsFeatured/JobsFeatured';
 
 const HeaderBanner = () => {
-    const jobsData = useLoaderData()
+    const jobsData = useLoaderData();
     const [jobs, setJobs] = useState([])
     useEffect(() => {
         fetch('JobList.json')
@@ -38,9 +38,9 @@ const HeaderBanner = () => {
             <div className='my-container'>
                 <h2 className='text-4xl text-center font-bold'>Featured Jobs</h2>
                 <p className='text-lg text-center  font-semibold text-gray-500 mt-3 mb-16'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='grid md:grid-cols-2'>
+                <div className='grid lg:grid-cols-2 gap-7'>
                     {
-                        jobsData.jobs.map(job => <JobsFeatured key={job.id} job = {job}></JobsFeatured>)
+                        jobsData.jobs.slice(0, 4).map(job => <JobsFeatured key={job.id} job = {job}></JobsFeatured>)
                     }
                 </div>
             </div>
