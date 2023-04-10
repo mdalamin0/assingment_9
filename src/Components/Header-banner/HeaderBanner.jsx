@@ -43,6 +43,9 @@ const HeaderBanner = () => {
                         jobsData.jobs.slice(0, 4).map(job => <JobsFeatured key={job.id} job = {job}></JobsFeatured>)
                     }
                 </div>
+                <div className='mt-8 text-center'>
+                    <button className='btn rounded-md'>See All Jobs</button>
+                </div>
             </div>
         </>
     );

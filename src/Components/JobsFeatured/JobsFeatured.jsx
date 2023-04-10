@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 
 const JobsFeatured = ({ job }) => {
     const { id, jobTitle, companyLogo, salary, companyName, location } = job;
@@ -12,8 +13,9 @@ const JobsFeatured = ({ job }) => {
                 <button className='btn-outlined'>Full Time</button>
             </div>
             <div className='flex my-3 '>
-                <p className='text-sm text-gray-400 font-semibold mr-8'>{location}</p>
-                <p className='text-sm text-gray-400 font-semibold'>{salary}</p>
+                <p className='text-sm text-gray-400 font-semibold mr-8 flex items-center'>
+                    <MapPinIcon className="h-5 w-5 text-gray-400 mr-2"  /> {location} </p>
+                <p className='text-sm text-gray-400 font-semibold flex items-center'> <CurrencyDollarIcon className="h-5 w-5 text-gray-400 mr-2" /> Salary: {salary} </p>
             </div>
             <button className='btn rounded-md mt-2'>View Details</button>
         </div>
