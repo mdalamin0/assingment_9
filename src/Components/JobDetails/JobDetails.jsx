@@ -10,6 +10,7 @@ const JobDetails = () => {
             <div className='absolute top-0 right-0'>
                 <img className='w-56' src="/public/Vector-1.png" alt="" />
             </div>
+            
         </div>
     );
 };
