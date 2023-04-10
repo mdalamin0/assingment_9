@@ -5,7 +5,6 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HeaderBanner from './Components/Header-banner/HeaderBanner'
 import ErrorPage from './Components/Error-page/ErrorPage'
-import JobList from './Components/JobList/JobList'
 import Statistics from './Components/Statistics/Statistics'
 import JobDetails from './Components/JobDetails/JobDetails'
 
@@ -26,8 +25,9 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>
       },
       {
-        path: 'job details',
-        element: <JobDetails></JobDetails>
+        path: 'job details/:jobId',
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch('JobsData.json')
       }
     ]
   }

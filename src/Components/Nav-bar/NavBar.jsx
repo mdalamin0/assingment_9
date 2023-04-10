@@ -32,9 +32,9 @@ const NavBar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/job details'
-                            aria-label='job details'
-                            title='job details'
+                            to='apply job'
+                            aria-label='apply job'
+                            title='apply job'
                             className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Apply jobs
@@ -128,9 +128,9 @@ const NavBar = () => {
                                         </li>
                                         <li>
                                             <NavLink
-                                                to='/job details'
-                                                aria-label='job details'
-                                                title='job details'
+                                                to='/apply job'
+                                                aria-label='apply job'
+                                                title='apply job'
                                                 className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Apply jobs
