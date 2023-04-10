@@ -5,7 +5,7 @@ import HeaderBanner from '../Header-banner/HeaderBanner';
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='my-container bg-gray-200'>
+        <div className='my-container bg-gray-200 relative'>
             <div className='relative flex items-center justify-between gap-10'>
                 <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Build Your Life</h1>
                 <ul className='items-center hidden  lg:flex gap-10'>
@@ -23,8 +23,8 @@ const NavBar = () => {
                     <li>
                         <NavLink
                             to='/statistics'
-                            aria-label='Home'
-                            title='Home'
+                            aria-label='statistics'
+                            title='statistics'
                             className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Statistics
@@ -32,9 +32,9 @@ const NavBar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/shop'
-                            aria-label='Shop'
-                            title='Shop'
+                            to='/job details'
+                            aria-label='job details'
+                            title='job details'
                             className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
                             Apply jobs
@@ -119,8 +119,8 @@ const NavBar = () => {
                                         <li>
                                             <NavLink
                                                 to='/statistics'
-                                                aria-label='Home'
-                                                title='Home'
+                                                aria-label='statistics'
+                                                title='statistics'
                                                 className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Statistics
@@ -128,9 +128,9 @@ const NavBar = () => {
                                         </li>
                                         <li>
                                             <NavLink
-                                                to='/shop'
-                                                aria-label='Shop'
-                                                title='Shop'
+                                                to='/job details'
+                                                aria-label='job details'
+                                                title='job details'
                                                 className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
                                                 Apply jobs

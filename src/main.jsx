@@ -7,6 +7,7 @@ import HeaderBanner from './Components/Header-banner/HeaderBanner'
 import ErrorPage from './Components/Error-page/ErrorPage'
 import JobList from './Components/JobList/JobList'
 import Statistics from './Components/Statistics/Statistics'
+import JobDetails from './Components/JobDetails/JobDetails'
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: 'statistics',
         element: <Statistics></Statistics>
+      },
+      {
+        path: 'job details',
+        element: <JobDetails></JobDetails>
       }
     ]
   }
