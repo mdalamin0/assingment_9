@@ -9,5 +9,5 @@
   @apply bg-gradient-to-r from-blue-500 to-indigo-500 px-7 py-3 text-white font-semibold
 }
 .btn-outlined{
-  @apply text-transparent bg-clip-text font-semibold bg-gradient-to-r from-blue-500 to-indigo-500 border-2 border-indigo-500 py-1 px-3 rounded-md
+  @apply text-transparent bg-clip-text font-semibold bg-gradient-to-r from-blue-500 to-indigo-500 border-2 border-indigo-500 py-1 px-3 rounded-md 
 }

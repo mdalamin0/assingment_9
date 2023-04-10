@@ -32,23 +32,23 @@ const NavBar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='apply job'
-                            aria-label='apply job'
+                            to='applied job'
+                            aria-label='applied job'
                             title='apply job'
                             className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
-                            Apply jobs
+                            Applied Jobs
                         </NavLink>
                     </li>
 
                     <li>
                         <NavLink
-                            to='/about'
-                            aria-label='About Us'
-                            title='About Us'
+                            to='/blog'
+                            aria-label='blog'
+                            title='blog'
                             className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                         >
-                            Blogs
+                            Blog
                         </NavLink>
                     </li>
 
@@ -128,23 +128,23 @@ const NavBar = () => {
                                         </li>
                                         <li>
                                             <NavLink
-                                                to='/apply job'
+                                                to='/applied job'
                                                 aria-label='apply job'
                                                 title='apply job'
                                                 className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
-                                                Apply jobs
+                                                Applied Jobs
                                             </NavLink>
                                         </li>
 
                                         <li>
                                             <NavLink
-                                                to='/about'
-                                                aria-label='About Us'
-                                                title='About Us'
+                                                to='/blog'
+                                                aria-label='blog'
+                                                title='blog'
                                                 className={({ isActive }) => (isActive ? 'font-medium tracking-wide text-cyan-600 underline transition-colors duration-200' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600')}
                                             >
-                                                Blogs
+                                                Blog
                                             </NavLink>
                                         </li>
                                     </ul>

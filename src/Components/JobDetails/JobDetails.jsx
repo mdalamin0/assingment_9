@@ -1,14 +1,20 @@
 import { MapPinIcon, CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router-dom';
+import { addToDb } from '../../../utilities/fakedb';
 
 const JobDetails = () => {
+    const navigate = useNavigate();
+    const goBackHome = () => {
+        navigate(-1)
+    }
     const jobDetailsData = useLoaderData()
-    // console.log(jobDetailsData.jobs)
     const dynamic = useParams();
-    // console.log(dynamic.jobId)
     const singleJob = jobDetailsData.jobs.find(job => job.id == dynamic.jobId)
-    console.log(singleJob)
-    const { jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, contactInformation, email, location } = singleJob;
+    const { id, jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, contactInformation, email, location } = singleJob;
+
+    const handleAddToJob = (id) => {
+        addToDb(id)
+    }
 
     return (
         <>
@@ -30,6 +36,7 @@ const JobDetails = () => {
 
                     <p className='font-bold'>Experiences:</p>
                     <p className='text-sm text-gray-400 my-4'>{experiences}</p>
+                    <button onClick={goBackHome} className='btn rounded-md'>Back to homepage</button>
                 </div>
                 <div className='lg:w-2/5 ms-4'>
                     <div className='bg-gray-200 p-7 rounded-md'>
@@ -47,7 +54,7 @@ const JobDetails = () => {
                         <p className='flex items-center text-gray-700 font-semibold my-4'> <EnvelopeIcon className='w-5 h-5 text-gray-400 mr-2'></EnvelopeIcon> Email: <span className='text-sm ms-2'>{contactInformation.email}</span></p>
                         <p className='flex items-center text-gray-700 font-semibold'> <MapPinIcon className='w-5 h-5 text-gray-400 mr-2'></MapPinIcon> Address: <span className='text-sm ms-2'>{location}</span></p>
                     </div>
-                    <button className='btn rounded-md w-full mt-6'>Apply Now</button>
+                    <button onClick={() => handleAddToJob(id)} className='btn rounded-md w-full mt-6'>Apply Now</button>
                 </div>
             </div>
         </>

@@ -9,7 +9,7 @@ const JobsFeatured = ({ job }) => {
             <img className='w-36 h-10' src={companyLogo} alt="" />
             <h2 className='mt-8 text-2xl font-semibold'>{jobTitle}</h2>
             <p className='text-xl my-1 text-gray-400'>{companyName}</p>
-            <div className='flex'>
+            <div className='flex my-4'>
                 <button className='btn-outlined mr-4'>{remoteOrOnsite}</button>
                 <button className='btn-outlined'>{fulltimeOrPartTime}</button>
             </div>

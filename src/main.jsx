@@ -7,6 +7,8 @@ import HeaderBanner from './Components/Header-banner/HeaderBanner'
 import ErrorPage from './Components/Error-page/ErrorPage'
 import Statistics from './Components/Statistics/Statistics'
 import JobDetails from './Components/JobDetails/JobDetails'
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs'
+import Blog from './Components/Blog/Blog'
 
 
 const router = createBrowserRouter([
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <HeaderBanner></HeaderBanner>,
-        loader: () => fetch('JobsData.json')
+        loader: () => fetch('/JobsData.json')
       },
       {
         path: 'statistics',
@@ -27,7 +29,16 @@ const router = createBrowserRouter([
       {
         path: 'job details/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: () => fetch('JobsData.json')
+        loader: () => fetch('/JobsData.json')
+      },
+      {
+        path: 'applied job',
+        element: <AppliedJobs></AppliedJobs>,
+        loader: () => fetch('/JobsData.json')
+      },
+      {
+        path: 'blog',
+        element: <Blog></Blog>
       }
     ]
   }
