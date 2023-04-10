@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HeaderBanner from './Components/Header-banner/HeaderBanner'
 import ErrorPage from './Components/Error-page/ErrorPage'
 import JobList from './Components/JobList/JobList'
+import Statistics from './Components/Statistics/Statistics'
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <HeaderBanner></HeaderBanner>,
-        loader: () => fetch('JobList.json')
+        loader: () => fetch('JobsData.json')
+      },
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>
       }
     ]
   }

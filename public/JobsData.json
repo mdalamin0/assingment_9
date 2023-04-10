@@ -1,0 +1,113 @@
+{
+    "jobs": [
+      {
+        "id": 1,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Remote",
+        "location": "New York, NY",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$100,000 - $120,000",
+        "jobDescription": "Seeking a talented software engineer to join our team...",
+        "jobResponsibility": "Design and implement software applications...",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field...",
+        "experiences": "5+ years of experience in software engineering...",
+        "contactInformation": {
+          "phone": "555-555-1234",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": 2,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Marketing Manager",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$80,000 - $100,000",
+        "jobDescription": "Seeking an experienced marketing manager to join our team...",
+        "jobResponsibility": "Develop and implement marketing strategies...",
+        "educationalRequirements": "Bachelor's degree in Marketing or related field...",
+        "experiences": "7+ years of experience in marketing...",
+        "contactInformation": {
+          "phone": "555-555-5678",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": 3,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Graphic Designer",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltimeOrPartTime": "Part-time",
+        "salary": "$50,000 - $60,000",
+        "jobDescription": "Seeking a creative and talented graphic designer to join our team...",
+        "jobResponsibility": "Create and design graphics for various projects...",
+        "educationalRequirements": "Bachelor's degree in Graphic Design or related field...",
+        "experiences": "3+ years of experience in graphic design...",
+        "contactInformation": {
+          "phone": "555-555-9012",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": 4,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Sales Representative",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Onsite",
+        "location": "Chicago, IL",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "Seeking a motivated and skilled sales representative to join our team...",
+        "jobResponsibility": "Identify and contact potential customers...",
+        "educationalRequirements": "Bachelor's degree in Business or related field...",
+        "experiences": "2+ years of experience in sales...",
+        "contactInformation": {
+          "phone": "555-555-3456",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": 5,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Senior Product Designer",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Onsite",
+        "location": "Chicago, IL",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "Seeking a motivated and skilled sales representative to join our team...",
+        "jobResponsibility": "Identify and contact potential customers...",
+        "educationalRequirements": "Bachelor's degree in Business or related field...",
+        "experiences": "2+ years of experience in sales...",
+        "contactInformation": {
+          "phone": "555-555-3456",
+          "email": "jobs@example.com"
+        }
+      },
+      {
+        "id": 6,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Technical Database Engineer",
+        "companyName": "Example Company",
+        "remoteOrOnsite": "Onsite",
+        "location": "Chicago, IL",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$60,000 - $80,000",
+        "jobDescription": "Seeking a motivated and skilled sales representative to join our team...",
+        "jobResponsibility": "Identify and contact potential customers...",
+        "educationalRequirements": "Bachelor's degree in Business or related field...",
+        "experiences": "2+ years of experience in sales...",
+        "contactInformation": {
+          "phone": "555-555-3456",
+          "email": "jobs@example.com"
+        }
+      }
+    ]
+}
+  

@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import JobList from '../JobList/JobList';
 import { useLoaderData } from 'react-router-dom';
+import JobsFeatured from '../JobsFeatured/JobsFeatured';
 
 const HeaderBanner = () => {
-    const jobs = useLoaderData()
+    const jobsData = useLoaderData()
+    const [jobs, setJobs] = useState([])
+    useEffect(() => {
+        fetch('JobList.json')
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, [])
+
     return (
         <>
             <div className='my-container bg-gray-200 lg:flex justify-between items-center' style={{ paddingBottom: '0' }}>
@@ -16,12 +24,23 @@ const HeaderBanner = () => {
                     <img className='object-cover' src="P3OLGJ1 copy 1.png" alt="" />
                 </div>
             </div>
+            {/* Job Category List */}
             <div className='my-container mt-24 '>
                 <h2 className='text-4xl text-center font-bold'>Job Category List</h2>
                 <p className='text-lg text-center  font-semibold text-gray-500 mt-3 mb-16'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='grid md:grid-cols-2 lg:grid-cols-4'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4'>
                     {
                         jobs.map(job => <JobList key={job.id} job={job}></JobList>)
+                    }
+                </div>
+            </div>
+            {/* Job featured section */}
+            <div className='my-container'>
+                <h2 className='text-4xl text-center font-bold'>Featured Jobs</h2>
+                <p className='text-lg text-center  font-semibold text-gray-500 mt-3 mb-16'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className='grid md:grid-cols-2'>
+                    {
+                        jobsData.jobs.map(job => <JobsFeatured key={job.id} job = {job}></JobsFeatured>)
                     }
                 </div>
             </div>
