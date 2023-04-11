@@ -14,10 +14,10 @@ const HeaderBanner = () => {
 
     const [JobsFeaturedData, setJobsFeaturedData] = useState(jobsData.jobs.slice(0, 4));
 
-    
+
 
     const handleSeeAllData = () => {
-       setJobsFeaturedData(jobsData.jobs)
+        setJobsFeaturedData(jobsData.jobs)
     }
 
     return (
@@ -51,11 +51,11 @@ const HeaderBanner = () => {
                         JobsFeaturedData.map(job => <JobsFeatured key={job.id} job={job}></JobsFeatured>)
                     }
                 </div>
-                <div className= {`mt-8 text-center }`}>
-                   {
-                    JobsFeaturedData.length === 4 && <button onClick={handleSeeAllData} className= 'btn rounded-md'>See All Jobs</button>
-                   }
-                    
+                <div className={`mt-8 text-center }`}>
+                    {
+                        JobsFeaturedData.length === 4 && <button onClick={handleSeeAllData} className='btn rounded-md'>See All Jobs</button>
+                    }
+
                 </div>
             </div>
         </>

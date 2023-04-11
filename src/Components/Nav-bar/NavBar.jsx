@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className='my-container bg-gray-200 relative'>
             <div className='relative flex items-center justify-between gap-10'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-800'>Build Your Life</h1>
+                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-800'>Build Your Career</h1>
                 <ul className='items-center hidden  lg:flex gap-10'>
 
                     <li>
@@ -54,7 +54,7 @@ const NavBar = () => {
 
                 </ul>
 
-                <button className='btn rounded-md'>Star Applying </button>
+                <button className='bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-3 md:px-7 md:py-3 text-white font-semibold rounded-md '>Star Applying </button>
 
                 {/* Mobile nav bar */}
 
@@ -151,7 +151,6 @@ const NavBar = () => {
 
 
                                 </nav>
-                                {/* <button className='btn bg-orange-700 p-4 text-white font-bold text-2xl rounded-md'>Apply now </button> */}
                             </div>
                         </div>
                     )}

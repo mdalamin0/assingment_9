@@ -38,7 +38,7 @@ const JobDetails = () => {
                     <p className='text-sm text-gray-400 my-4'>{experiences}</p>
                     <button onClick={goBackHome} className='btn rounded-md'>Back to homepage</button>
                 </div>
-                <div className='lg:w-2/5 ms-4'>
+                <div className='mt-4 md:mt-0 lg:w-2/5 ms-4'>
                     <div className='bg-gray-200 p-7 rounded-md'>
                         <h3 className='text-xl font-bold'>Job Details</h3>
                         <hr className='border-2 border-gray-400 my-6' />

@@ -23,8 +23,8 @@ const AppliedJobs = () => {
         const remoteJob = savedJob.filter(job => job.remoteOrOnsite == 'Remote')
         setAppliedJobData(remoteJob)
     }
-    const filterFullTimeJob = () => {
-        const fullTimeJob = savedJob.filter(job => job.fulltimeOrPartTime == 'Full-time')
+    const filterOnsiteJob = () => {
+        const fullTimeJob = savedJob.filter(job => job.remoteOrOnsite == 'Onsite')
         setAppliedJobData(fullTimeJob)
     }
     return (
@@ -46,7 +46,7 @@ const AppliedJobs = () => {
                     <div className={`${dropdown ? 'absolute top-8 right-10 ' : 'hidden'}`}>
                         <div className='flex my-4 shadow-lg bg-gray-100 rounded-md p-8'>
                             <button onClick={filterRemoteJob} className='btn-outlined mr-4'>Remote</button>
-                            <button onClick={filterFullTimeJob} className='btn-outlined'>Full time</button>
+                            <button onClick={filterOnsiteJob} className='btn-outlined'>Onsite</button>
                         </div>
                     </div>
                 </div>
