@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className='my-container bg-gray-200 relative'>
             <div className='relative flex items-center justify-between gap-10'>
-                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold'>Build Your Life</h1>
+                <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-800'>Build Your Life</h1>
                 <ul className='items-center hidden  lg:flex gap-10'>
 
                     <li>
