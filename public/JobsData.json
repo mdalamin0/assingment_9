@@ -2,7 +2,7 @@
     "jobs": [
       {
         "id": 1,
-        "companyLogo": "../src/companyLog/tesla-9 1.png",
+        "companyLogo": "https://i.ibb.co/VQmszfh/tesla-9-1.png",
         "jobTitle": "Software Engineer",
         "companyName": "Tesla",
         "remoteOrOnsite": "Remote",
@@ -20,7 +20,7 @@
       },
       {
         "id": 2,
-        "companyLogo": "../src/companyLog/pentagram.png",
+        "companyLogo": "https://i.ibb.co/HDWLnrR/pentagram.png",
         "jobTitle": "Marketing Manager",
         "companyName": "pentagram",
         "remoteOrOnsite": "Onsite",
@@ -38,7 +38,7 @@
       },
       {
         "id": 3,
-        "companyLogo": "../src/companyLog/winkreative.png",
+        "companyLogo": "https://i.ibb.co/bBHjZmR/winkreative.webp",
         "jobTitle": "Graphic Designer",
         "companyName": "Winkreative",
         "remoteOrOnsite": "Remote",
@@ -56,7 +56,7 @@
       },
       {
         "id": 4,
-        "companyLogo": "../src/companyLog/google-1-1 1.png",
+        "companyLogo": "https://i.ibb.co/9m0DBmN/google-1-1-1.png",
         "jobTitle": "Technical Database Engineer",
         "companyName": "Google LLC",
         "remoteOrOnsite": "Onsite",
@@ -74,7 +74,7 @@
       },
       {
         "id": 5,
-        "companyLogo": "../src/companyLog/netflix-4 1.png",
+        "companyLogo": "https://i.ibb.co/sv5PcMK/netflix-4-1.png",
         "jobTitle": "Senior Product Designer",
         "companyName": "Netflix",
         "remoteOrOnsite": "Onsite",

@@ -21,10 +21,10 @@ const JobDetails = () => {
             <div className='my-container bg-gray-200 ' style={{ paddingBottom: '0' }}>
                 <h3 className='text-center text-2xl font-bold '>Job Details</h3>
                 <div>
-                    <img className='w-4/12 md:w-3/12 lg:w-2/12' src="/public/Vector.png" alt="" />
+                    <img className='w-4/12 md:w-3/12 lg:w-2/12' src="https://i.ibb.co/bgznCC7/Vector.png" alt="" />
                 </div>
                 <div className='absolute top-0 right-0'>
-                    <img className='w-56' src="/public/Vector-1.png" alt="" />
+                    <img className='w-56' src="https://i.ibb.co/xGZKNPq/Vector-1.png" alt="" />
                 </div>
             </div>
             <div className='my-container mt-20 lg:flex '>

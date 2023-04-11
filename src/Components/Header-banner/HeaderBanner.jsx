@@ -21,7 +21,7 @@ const HeaderBanner = () => {
                     <button className='btn rounded-md'>Get Started</button>
                 </div>
                 <div className='lg:w-1/2'>
-                    <img className='object-cover' src="P3OLGJ1 copy 1.png" alt="" />
+                    <img className='object-cover' src="https://i.ibb.co/wLyVcJg/P3-OLGJ1-copy-1.png" alt="" />
                 </div>
             </div>
             {/* Job Category List */}
