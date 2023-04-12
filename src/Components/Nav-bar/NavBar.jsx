@@ -54,7 +54,7 @@ const NavBar = () => {
 
                 </ul>
 
-                <button className='bg-gradient-to-r from-blue-500 z-50 to-purple-600 px-5 py-3 md:px-7 md:py-3 text-white font-semibold rounded-md '>Star Applying </button>
+                <button className='bg-gradient-to-r from-blue-500 to-purple-600 px-5 py-3 md:px-7 md:py-3 font-semibold rounded-md text-white'>Star Applying </button>
 
                 {/* Mobile nav bar */}
 
