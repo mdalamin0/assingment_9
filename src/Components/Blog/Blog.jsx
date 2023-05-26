@@ -13,7 +13,7 @@ const Blog = () => {
 
                 <div className='bg-gray-100 p-4 rounded-md mb-10'>
                     <h1 className='text-2xl font-bold mb-4 '>Question-1:   When should we use context api .?</h1>
-                    <h1 className='font-semibold mb-2'>Answer:  The Context API in React should be used when you have data that needs to be passed down through the component tree, <br /> but you don't want to pass it down explicitly through props at each level. <br /> Instead, you can create a Context object that contains the data and pass it down once, <br /> where it can be accessed by any child component that needs it </h1>
+                    <h1 className='font-semibold mb-2'>Answer:  The Context API in React should be used when you have data that needs to be passed down through the component tree, <br /> but you don't want to pass it down explicitly through props at each level. <br /> Instead, you can create a Context object that contains the data and pass it down once,  </h1>
                 </div>
                 <div className='bg-gray-100 p-4 rounded-md mb-10'>
                     <h1 className='text-2xl font-bold mb-4 '> Question-2: What is custom hook ? </h1>
